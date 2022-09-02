@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int a[10],i,n,x;
+    int a[10],i,n;
     printf("Enter the length of a array:");
     scanf("%d",&n);
     for(i=0;i<n;i++)
@@ -10,15 +10,9 @@ void main()
         scanf("%d",&a[i]);
     }
     
-    printf("Enter the element in array you want to find:");
-    scanf("%d",&x);
-    
     for(i=0;i<n;i++)
     {
-     if(a[i]==x)
-     {
-        printf("Element found");
-        break;
-     }
+        printf("%d",a[i]);
+        printf(" ");
     }
 }
