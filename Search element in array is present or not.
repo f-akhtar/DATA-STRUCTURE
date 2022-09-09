@@ -1,0 +1,36 @@
+#include<stdio.h>
+void main()
+{
+    int array[10],i,size,search,flag=0;
+    printf("Enter the size of a array: ");
+    scanf("%d",&size);
+    for(i=0;i<size;i++)
+    {
+        printf("Enter the element in array one by one: ");
+        scanf("%d",&array[i]);
+    }
+    
+    printf("Enter the element in array you want to search: ");
+    scanf("%d",&search);
+    
+    for(i=0;i<size;i++)
+    {
+     if(array[i]==search)
+     {
+        flag=flag+1;
+        break;
+     }
+     else
+     {
+         flag=flag;
+     }
+    }
+    if(flag==1)
+    {
+        printf("Element is present in the array.");
+    }
+    else
+    {
+        printf("Element is not in array.");
+    }
+}
