@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+    int array[10],i,size;
+    printf("Enter the size of a array: ");
+    scanf("%d",&size);
+    for(i=0;i<size;i++)
+    {
+        printf("Enter the elements in array one by one: ");
+        scanf("%d",&array[i]);
+    }
+    for(i=0;i<size;i++)
+    {
+        printf("%d %d",array[i],i);
+        printf("\n");
+    }
+}
