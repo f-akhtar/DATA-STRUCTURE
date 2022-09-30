@@ -29,20 +29,13 @@ void display(struct Node* node)
 
 int main()
 {
-    int i;
+    int i,data;
     struct Node* head = NULL;
-    // for(i=0;i<5;i++)
-    // {
-    //     scanf("%d", newNode->data);
-    // }
-    insertStart(&head,100);
-    insertStart(&head,80);
-    insertStart(&head,60);
-    insertStart(&head,40);
-    insertStart(&head,20);
-    insertStart(&head,10);
-    insertStart(&head,0);
-    
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&data);
+        insertStart(&head,data);
+    }
     display(head);
 
     return 0; 
