@@ -13,7 +13,6 @@ void insertStart(struct Node** head, int data)
     newNode->data = data;
     newNode->next = *head;
     *head = newNode;
-    printf("Inserted %d\n",newNode->data);
 }
 
 void display(struct Node* node)
@@ -29,10 +28,13 @@ void display(struct Node* node)
 
 int main()
 {
-    int i,data;
+    int n,i,data;
     struct Node* head = NULL;
-    for(i=0;i<5;i++)
+    printf("Enter the size of a List: ");
+    scanf("%d", &n);
+    for(i=0;i<n;i++)
     {
+        printf("Enter the element in the List: ");
         scanf("%d",&data);
         insertStart(&head,data);
     }
